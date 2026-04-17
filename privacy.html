@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - MeinRechnerAuto</title>
+    <title>Datenschutzerklärung &mdash; MeinRechner Auto</title>
+    <meta name="description" content="Datenschutzerklärung der Android-App MeinRechner Auto von Cosmic Production d.o.o.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -12,86 +13,141 @@
             color: #1d1d1f;
             background: #ffffff;
         }
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 48px 24px;
-        }
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: #1d1d1f;
-        }
-        .subtitle {
-            font-size: 0.95rem;
-            color: #6e6e73;
-            margin-bottom: 40px;
-        }
-        h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-top: 36px;
-            margin-bottom: 12px;
-            color: #1d1d1f;
-        }
-        p, li {
-            font-size: 1rem;
-            color: #424245;
-            margin-bottom: 12px;
-        }
-        ul {
-            padding-left: 24px;
-            margin-bottom: 16px;
-        }
+        .container { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 6px; }
+        .subtitle { font-size: 0.95rem; color: #6e6e73; margin-bottom: 32px; }
+        h2 { font-size: 1.2rem; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #1d1d1f; }
+        p, li { font-size: 1rem; color: #2a2a2e; margin-bottom: 12px; }
+        ul { padding-left: 24px; margin-bottom: 16px; }
         li { margin-bottom: 8px; }
-        a { color: #0071e3; text-decoration: none; }
+        a { color: #1E5AA8; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .footer {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid #d2d2d7;
-            font-size: 0.85rem;
-            color: #86868b;
-        }
-
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #d2d2d7; font-size: 0.85rem; color: #86868b; }
+        strong { color: #1d1d1f; }
+        .lang-switch { font-size: 0.85rem; color: #6e6e73; margin-bottom: 24px; }
+        .callout { background: #f5efe6; border-left: 3px solid #1E5AA8; padding: 12px 16px; margin: 16px 0; font-size: 0.95rem; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="subtitle">MeinRechnerAuto &mdash; Last updated 2026-04-09</p>
+        <p class="lang-switch"><a href="privacy-en.html">English version</a></p>
+        <h1>Datenschutzerklärung</h1>
+        <p class="subtitle">MeinRechner Auto (Android) &middot; Stand: 17. April 2026</p>
 
-        <h2>Introduction</h2>
-        <p>MeinRechnerAuto is developed by Cosmic Production d.o.o., based in Split, Croatia. We respect your privacy and are committed to protecting your personal data.</p>
+        <h2>1. Verantwortlicher</h2>
+        <p>
+            <strong>Cosmic Production d.o.o.</strong><br>
+            Split, Kroatien<br>
+            Geschäftsführer: Ivan Boban<br>
+            E-Mail: <a href="mailto:ivan@cosmicproduction.hr">ivan@cosmicproduction.hr</a><br>
+            Website: <a href="https://meinrechner.eu">meinrechner.eu</a>
+        </p>
 
-        <h2>Data Collection</h2>
-        <p>This app does not collect, store, or share any personal data with us. All data you enter stays on your device (or in your personal iCloud account if you have iCloud enabled).</p>
+        <h2>2. Kurzfassung</h2>
+        <p>
+            MeinRechner Auto rechnet vollständig lokal auf Ihrem Gerät. Wir selbst betreiben keine Server, die Ihre Berechnungen oder persönliche Daten entgegennehmen.
+            Die <strong>kostenlose Version</strong> finanziert sich über Anzeigen von <strong>Google AdMob</strong> — dabei verarbeitet Google Gerätekennungen, Ihre IP-Adresse und Interaktionsdaten.
+            In der EU, im EWR, der Schweiz und im Vereinigten Königreich fragt die App vor dem Anzeigen von Werbung um Ihre Einwilligung (Consent-Dialog von Google UMP).
+            Mit einem einmaligen <strong>Premium-Kauf</strong> wird die App werbefrei und es entfällt jede datenschutzrelevante Verarbeitung durch AdMob.
+        </p>
 
-        <h2>Third-Party Services</h2>
-        <p>This app may use the following third-party services:</p>
+        <h2>3. Was die App selbst auf Ihrem Gerät speichert</h2>
+        <p>
+            Die App legt ausschließlich <em>lokal auf Ihrem Gerät</em> folgende Informationen ab:
+        </p>
         <ul>
-            <li><strong>Apple App Store</strong> &mdash; for app distribution and in-app purchases. Apple's privacy policy applies.</li>
-            <li><strong>Google AdMob</strong> &mdash; for displaying advertisements in the free version. AdMob may collect device identifiers for ad serving. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+            <li><strong>Berechnungsverlauf:</strong> Eingaben und Ergebnisse der vier Rechner in einer SQLite-Datenbank (Room). Kostenlos: die letzten 10 Einträge. Mit Premium: unbegrenzt. Sie können einzelne Einträge jederzeit in der App löschen.</li>
+            <li><strong>Premium-Status-Cache:</strong> Ein Boolean-Flag in einer DataStore-Präferenzdatei, damit die App beim Kaltstart schnell weiß, ob Werbung ausgespielt werden soll oder nicht. Der Cache wird beim Deinstallieren der App mitgelöscht und ist von Cloud-Backup/Gerätemigration ausgeschlossen.</li>
+            <li><strong>Einwilligungsstatus:</strong> Google UMP speichert Ihre Auswahl aus dem Consent-Dialog lokal. Sie können diese Auswahl jederzeit in den App-Einstellungen unter „Werbung & Datenschutz" erneut öffnen.</li>
+        </ul>
+        <p>Keines dieser Datenfragmente wird an Server von Cosmic Production d.o.o. übertragen. Wir betreiben keine Analyse-, Tracking- oder Crash-Reporting-SDKs in der App.</p>
+
+        <h2>4. Verarbeitung durch Google Play Billing (bei Kauf von Premium)</h2>
+        <p>
+            Wenn Sie Premium kaufen, wickelt <strong>Google Ireland Ltd.</strong> (im EWR) bzw. <strong>Google LLC</strong> (außerhalb) den gesamten Kauf ab: Zahlungsmittel, Abrechnung, Rückerstattungen, Steuer.
+            Wir erhalten von Google lediglich einen anonymen Kauf-Token, anhand dessen die App auf Ihrem Gerät den Premium-Zustand verifiziert. Wir sehen <em>weder Ihren Namen noch Ihre Adresse noch Ihre Zahlungsdaten oder die E-Mail Ihres Google-Kontos.</em>
+        </p>
+        <p>
+            Die Datenverarbeitung durch Google richtet sich nach der <a href="https://policies.google.com/privacy">Google-Datenschutzerklärung</a>.
+        </p>
+
+        <h2>5. Verarbeitung durch Google Mobile Ads / AdMob (nur in der kostenlosen Version)</h2>
+        <p>
+            In der kostenlosen Version blendet die App Werbung über <strong>Google AdMob</strong> (Google Ireland Ltd. im EWR; Google LLC außerhalb) ein. Google AdMob ist gemeinsam Verantwortlicher für die über sein SDK verarbeiteten Daten.
+        </p>
+        <p>
+            Das AdMob-SDK kann insbesondere folgende Kategorien von Daten verarbeiten:
+        </p>
+        <ul>
+            <li><strong>Werbe-ID (Advertising ID):</strong> die von Android bereitgestellte zurücksetzbare Gerätekennung. Erforderlich dafür sind die Berechtigungen <code>com.google.android.gms.permission.AD_ID</code>, <code>INTERNET</code> und <code>ACCESS_NETWORK_STATE</code>.</li>
+            <li><strong>IP-Adresse und daraus abgeleiteter ungefährer Standort</strong> (Land / Region).</li>
+            <li><strong>Gerätedaten:</strong> Modell, Betriebssystemversion, Sprach- und Zeitzoneneinstellung, Spracheinstellung.</li>
+            <li><strong>Interaktionsdaten:</strong> ob eine Anzeige geladen, eingeblendet, angeklickt oder geschlossen wurde, Frequenzbegrenzung, Werbeformat (Banner, Interstitial).</li>
+            <li><strong>Diagnosedaten:</strong> Fehlerprotokolle und Performance-Telemetrie des Mobile Ads SDK.</li>
+        </ul>
+        <p>
+            Zweck dieser Verarbeitung ist die Auslieferung und Messung von Werbung, Betrugs- und Missbrauchsprävention sowie Stabilitätsüberwachung des SDK.
+            Rechtsgrundlage für die Verarbeitung im EU-/EWR-/UK-/CH-Raum ist Ihre Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO bzw. § 25 Abs. 1 TTDSG, die vor dem ersten Werbeladen über den Google-UMP-Consent-Dialog eingeholt wird.
+            Außerhalb dieser Regionen richtet sich die Verarbeitung nach den lokal geltenden Gesetzen; Google AdMob setzt dort die jeweiligen Mechanismen wie Apple ATT oder IAB-Frameworks automatisch um.
+        </p>
+        <p>
+            Details zur Datenverarbeitung durch Google Mobile Ads finden Sie hier: <a href="https://support.google.com/admob/answer/9012903">Google Mobile Ads SDK – data disclosure</a>. Für den Datenhandlings-Rahmen gilt ergänzend die <a href="https://policies.google.com/technologies/ads">Google-Richtlinie zu Werbung</a>.
+        </p>
+
+        <div class="callout">
+            <strong>Werbefrei mit Premium.</strong> Wenn Sie die Werbung vollständig deaktivieren möchten, können Sie in der App das einmalige Premium freischalten. Premium entfernt AdMob vollständig aus dem Laufzeitverhalten der App; anschließend findet keine der oben beschriebenen AdMob-Verarbeitungen mehr statt.
+        </div>
+
+        <h2>6. Ihre Einwilligung verwalten</h2>
+        <p>
+            Sie können Ihre Einwilligung für Werbedatenverarbeitung jederzeit in der App anpassen: <em>Einstellungen &rarr; Rechtliches &rarr; „Werbung & Datenschutz"</em>. Die App öffnet erneut den von Google bereitgestellten Consent-Dialog, in dem Sie Ihre Auswahl ändern oder zurückziehen können.
+            Der Eintrag „Werbung & Datenschutz" wird in Regionen eingeblendet, in denen Google den Zugriff auf das Formular vorsieht.
+        </p>
+
+        <h2>7. Speicherdauer</h2>
+        <ul>
+            <li><strong>Lokale App-Daten</strong> (Berechnungsverlauf, Einstellungen, Premium-Cache): solange die App auf Ihrem Gerät installiert ist. Sie werden bei Deinstallation vollständig entfernt.</li>
+            <li><strong>AdMob-Daten</strong>: richten sich nach der Aufbewahrungsrichtlinie von Google. Die Werbe-ID kann von Ihnen jederzeit in den Android-Einstellungen zurückgesetzt oder gelöscht werden.</li>
+            <li><strong>Play-Billing-Kauf-Token</strong>: unbefristet gültig für die Verifikation Ihres Premium-Kaufs.</li>
         </ul>
 
-        <h2>Analytics</h2>
-        <p>We do not use any analytics or tracking services. We do not collect usage data, crash reports, or device information beyond what Apple provides through App Store Connect analytics (which is anonymised and aggregated).</p>
+        <h2>8. Empfänger und Drittland-Übermittlung</h2>
+        <p>
+            Google Ireland Ltd. (Dublin, Irland) ist unser primärer Vertragspartner im EWR. Google kann personenbezogene Daten in die USA übertragen. Die Übermittlung basiert auf Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO) sowie ergänzenden Garantien, wie von Google dokumentiert.
+        </p>
 
-        <h2>Children's Privacy</h2>
-        <p>This app does not knowingly collect data from children under 13. If you believe a child has provided personal data through the app, please contact us.</p>
+        <h2>9. Ihre Rechte nach DSGVO</h2>
+        <p>Sofern die DSGVO auf Sie anwendbar ist, haben Sie folgende Rechte:</p>
+        <ul>
+            <li>Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Widerspruch (Art. 21) und Datenübertragbarkeit (Art. 20).</li>
+            <li>Beschwerde bei einer Aufsichtsbehörde (Art. 77). Für Cosmic Production d.o.o. ist die zuständige Aufsichtsbehörde die kroatische <em>Agencija za zaštitu osobnih podataka</em> (<a href="https://azop.hr">azop.hr</a>).</li>
+            <li>Widerruf der Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3) — technisch in der App umgesetzt über den Eintrag „Werbung & Datenschutz".</li>
+        </ul>
+        <p>
+            Da wir selbst keine personenbezogenen Daten erheben oder speichern, werden Auskunfts- oder Löschungsbegehren in Bezug auf AdMob-Daten an Google weitergeleitet — Sie können diese auch direkt über Ihr <a href="https://myaccount.google.com/data-and-privacy">Google-Konto</a> ausüben.
+            Fragen zu Ihrem Premium-Kauf richten Sie bitte an Google Play.
+        </p>
 
-        <h2>Your Rights</h2>
-        <p>Under GDPR and other applicable laws, you have the right to access, correct, or delete any personal data. Since we do not collect personal data, there is nothing to request. If you have concerns, contact us.</p>
+        <h2>10. Kinder</h2>
+        <p>Die App richtet sich nicht an Kinder unter 18 Jahren. Wir erheben wissentlich keine Daten von Kindern.</p>
 
-        <h2>Changes</h2>
-        <p>We may update this privacy policy from time to time. Any changes will be posted on this page.</p>
+        <h2>11. Änderungen dieser Erklärung</h2>
+        <p>
+            Bei wesentlichen Änderungen der Datenverarbeitung passen wir diese Seite an und aktualisieren das Datum oben. Wir empfehlen, die Seite gelegentlich zu prüfen — Änderungen werden zusätzlich in den Release Notes der App-Version erwähnt.
+        </p>
 
-        <h2>Contact</h2>
-        <p>If you have questions about this privacy policy, contact us at <a href="mailto:ivan@cosmicproduction.hr">ivan@cosmicproduction.hr</a>.</p>
+        <h2>12. Kontakt</h2>
+        <p>
+            Fragen zum Datenschutz oder zur App: <a href="mailto:ivan@cosmicproduction.hr">ivan@cosmicproduction.hr</a>.
+        </p>
 
         <div class="footer">
-            <p>&copy; 2026 Cosmic Production d.o.o. All rights reserved.</p>
+            <p>
+                Cosmic Production d.o.o. &middot; Split, Kroatien &middot;
+                <a href="terms.html">Nutzungsbedingungen</a> &middot;
+                <a href="support.html">Support</a> &middot;
+                <a href="index.html">Übersicht</a>
+            </p>
         </div>
     </div>
 </body>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy &mdash; MeinRechner Auto</title>
+    <meta name="description" content="Privacy policy for the MeinRechner Auto Android app published by Cosmic Production d.o.o.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #ffffff;
+        }
+        .container { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 6px; }
+        .subtitle { font-size: 0.95rem; color: #6e6e73; margin-bottom: 32px; }
+        h2 { font-size: 1.2rem; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #1d1d1f; }
+        p, li { font-size: 1rem; color: #2a2a2e; margin-bottom: 12px; }
+        ul { padding-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        a { color: #1E5AA8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #d2d2d7; font-size: 0.85rem; color: #86868b; }
+        strong { color: #1d1d1f; }
+        .lang-switch { font-size: 0.85rem; color: #6e6e73; margin-bottom: 24px; }
+        .callout { background: #f5efe6; border-left: 3px solid #1E5AA8; padding: 12px 16px; margin: 16px 0; font-size: 0.95rem; }
+        code { background: #f5f5f7; padding: 1px 6px; border-radius: 3px; font-size: 0.92em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="lang-switch"><a href="privacy.html">Deutsche Version</a></p>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">MeinRechner Auto (Android) &middot; Effective 2026-04-17</p>
+
+        <h2>1. Controller</h2>
+        <p>
+            <strong>Cosmic Production d.o.o.</strong><br>
+            Split, Croatia<br>
+            Managing Director: Ivan Boban<br>
+            Email: <a href="mailto:ivan@cosmicproduction.hr">ivan@cosmicproduction.hr</a><br>
+            Website: <a href="https://meinrechner.eu">meinrechner.eu</a>
+        </p>
+
+        <h2>2. Short version</h2>
+        <p>
+            MeinRechner Auto runs all calculations locally on your device. We do not operate any servers that receive your calculations or personal data.
+            The <strong>free tier</strong> is ad-supported via <strong>Google AdMob</strong>, which processes device identifiers, IP address, and ad-interaction data.
+            In the EU, EEA, UK, and Switzerland the app asks for your consent before loading any ads (Google UMP consent form).
+            A one-time <strong>Premium</strong> purchase removes all ads and stops the AdMob processing described below.
+        </p>
+
+        <h2>3. What the app stores locally on your device</h2>
+        <p>The app stores the following strictly <em>on your device</em>:</p>
+        <ul>
+            <li><strong>Calculation history:</strong> inputs and results for the four calculators in an on-device SQLite database (Room). Free tier: last 10 entries. Premium: unlimited. You can delete individual entries at any time inside the app.</li>
+            <li><strong>Premium-state cache:</strong> a single boolean flag in a DataStore preferences file so the app can quickly decide at cold start whether to show ads. The cache is deleted when you uninstall the app and is excluded from cloud backup / device-to-device transfer.</li>
+            <li><strong>Consent state:</strong> Google UMP stores your consent choice locally. You can re-open the consent form any time from <em>Settings &rarr; Rechtliches &rarr; "Werbung &amp; Datenschutz"</em>.</li>
+        </ul>
+        <p>None of this data is transmitted to Cosmic Production d.o.o. servers. The app ships no analytics, tracking, A/B-test, or crash-reporting SDKs.</p>
+
+        <h2>4. Processing by Google Play Billing (when you buy Premium)</h2>
+        <p>
+            When you purchase Premium, <strong>Google Ireland Ltd.</strong> (in the EEA) or <strong>Google LLC</strong> (elsewhere) handles the entire transaction: payment method, billing, refunds, tax. We receive only an opaque purchase token from Google, which the app uses on-device to verify your Premium entitlement.
+            We never see your name, address, payment details, or Google Account email. Google's processing is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+        </p>
+
+        <h2>5. Processing by Google Mobile Ads / AdMob (free tier only)</h2>
+        <p>
+            In the free tier the app shows ads via <strong>Google AdMob</strong> (Google Ireland Ltd. in the EEA, Google LLC elsewhere). Google AdMob is a joint controller for data processed by its SDK.
+        </p>
+        <p>The AdMob SDK may process the following data categories:</p>
+        <ul>
+            <li><strong>Advertising ID:</strong> the resettable device identifier provided by Android. Requires the <code>com.google.android.gms.permission.AD_ID</code>, <code>INTERNET</code>, and <code>ACCESS_NETWORK_STATE</code> permissions.</li>
+            <li><strong>IP address and approximate location</strong> (country / region) derived from it.</li>
+            <li><strong>Device data:</strong> model, OS version, language and time-zone settings.</li>
+            <li><strong>Interaction data:</strong> whether an ad was loaded, rendered, clicked, or dismissed; frequency capping; ad format (banner, interstitial).</li>
+            <li><strong>Diagnostics:</strong> Mobile Ads SDK error logs and performance telemetry.</li>
+        </ul>
+        <p>
+            Purposes: serving and measuring ads, fraud and abuse prevention, SDK stability monitoring.
+            Legal basis in the EU/EEA/UK/CH is your consent (GDPR Art. 6 (1) (a); § 25 (1) TTDSG), collected via the Google UMP consent dialog before any ad loads.
+            Outside those regions, processing follows local law; Google AdMob automatically honours regional frameworks (IAB TCF, CCPA signals) where applicable.
+        </p>
+        <p>
+            For details on AdMob data handling see <a href="https://support.google.com/admob/answer/9012903">Google Mobile Ads SDK &mdash; data disclosure</a> and <a href="https://policies.google.com/technologies/ads">Google Ads policies</a>.
+        </p>
+
+        <div class="callout">
+            <strong>Ad-free with Premium.</strong> If you want to disable ads completely, unlock Premium inside the app (one-time purchase). Premium removes the AdMob runtime entirely; none of the AdMob processing above happens after that point.
+        </div>
+
+        <h2>6. Managing your consent</h2>
+        <p>
+            You can change your consent for ad data processing any time inside the app: <em>Settings &rarr; Rechtliches &rarr; "Werbung &amp; Datenschutz"</em>. The app re-opens Google's consent form where you can adjust or withdraw your choice.
+            The entry is shown only in regions where Google requires a privacy-options entry point (EEA/UK/Switzerland/others).
+        </p>
+
+        <h2>7. Retention</h2>
+        <ul>
+            <li><strong>Local app data</strong> (calculation history, settings, premium cache): for as long as the app is installed on your device. Fully removed on uninstall.</li>
+            <li><strong>AdMob data:</strong> per Google's retention policy. The Advertising ID can be reset or deleted any time in Android system settings.</li>
+            <li><strong>Play Billing purchase token:</strong> persists for Premium verification.</li>
+        </ul>
+
+        <h2>8. Recipients and international transfers</h2>
+        <p>
+            Google Ireland Ltd. (Dublin, Ireland) is our primary contractual partner in the EEA. Google may transfer personal data to the USA under Standard Contractual Clauses (GDPR Art. 46 (2) (c)) plus supplementary safeguards documented by Google.
+        </p>
+
+        <h2>9. Your GDPR rights</h2>
+        <p>Where GDPR applies, you have the following rights:</p>
+        <ul>
+            <li>Access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), objection (Art. 21), and data portability (Art. 20).</li>
+            <li>To lodge a complaint with a supervisory authority (Art. 77). For Cosmic Production d.o.o. the competent authority is Croatia's <em>Agencija za zaštitu osobnih podataka</em> (<a href="https://azop.hr">azop.hr</a>).</li>
+            <li>To withdraw consent with effect for the future (Art. 7 (3)) — implemented in-app via the "Werbung &amp; Datenschutz" entry.</li>
+        </ul>
+        <p>
+            Because we do not collect or store personal data ourselves, access or erasure requests regarding AdMob data are forwarded to Google; you can also exercise these rights directly via your <a href="https://myaccount.google.com/data-and-privacy">Google Account</a>.
+            Questions about your Premium purchase should be directed to Google Play.
+        </p>
+
+        <h2>10. Children</h2>
+        <p>The app is not directed to children under 18. We do not knowingly collect data from children.</p>
+
+        <h2>11. Changes to this policy</h2>
+        <p>
+            If we materially change how the app handles data, we will update this page and bump the effective date. Material changes will also be reflected in the app's release notes.
+        </p>
+
+        <h2>12. Contact</h2>
+        <p>
+            Privacy or app questions: <a href="mailto:ivan@cosmicproduction.hr">ivan@cosmicproduction.hr</a>.
+        </p>
+
+        <div class="footer">
+            <p>
+                Cosmic Production d.o.o. &middot; Split, Croatia &middot;
+                <a href="terms.html">Terms of Service</a> &middot;
+                <a href="support.html">Support</a> &middot;
+                <a href="index.html">Overview</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
